@@ -20,6 +20,8 @@ const { Login,setLogin } = useContext(CounterContext);
 function Logout(){
     setLogin(null);
     localStorage.removeItem('usertoken');
+    localStorage.removeItem('userToken');
+
     navigate('/login')
 }
 let navigate =useNavigate()
