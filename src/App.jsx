@@ -2,7 +2,7 @@ import { useState } from 'react'
 import reactLogo from './assets/react.svg'
 import viteLogo from '/vite.svg'
 import './App.css'
-import { createBrowserRouter, RouterProvider } from 'react-router-dom'
+import { createHashRouter, RouterProvider } from 'react-router-dom'
 import '@fortawesome/fontawesome-free/css/all.min.css';
 
 import Layer from './components/Layout/Layout';
@@ -30,7 +30,7 @@ function App() {
   let query= new QueryClient();
   const [count, setCount] = useState(0)
 
-  let x = createBrowserRouter([
+  let x = createHashRouter([
     {path:'',element:<Layer/>,children:[
       {path:'home',element:<ProtectedRouter><Home/></ProtectedRouter>},
       {path:'brand',element:<ProtectedRouter><Brand/></ProtectedRouter>},
