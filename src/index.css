@@ -1,0 +1,25 @@
+.row{
+    @apply flex items-center flex-wrap
+}
+.category-slider-container {
+    max-width: 100%;
+    overflow: hidden;
+    padding: 10px;
+}
+
+.category-item {
+    text-align: center;
+}
+
+.category-img {
+    height: 180px;
+    width: 100%;
+    object-fit: cover;
+   
+}
+.product:hover button{
+opacity: 1;
+transform: translate(0px, -15px);
+transition: all 0.5s;
+
+}
